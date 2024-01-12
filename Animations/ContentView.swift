@@ -11,6 +11,7 @@ enum Animations: String, Hashable {
     
     case pendulum = "Pendulum"
     case soundBars = "Sound bars"
+    case circleSoundBars = "Circle Sound bar"
     
 }
 
@@ -30,6 +31,8 @@ struct ContentView: View {
                         Pendulum()
                     case .soundBars:
                         SoundBar()
+                    case .circleSoundBars:
+                        CircleSoundBar()
                     }
                 }
                 .listRowSeparator(.hidden)
